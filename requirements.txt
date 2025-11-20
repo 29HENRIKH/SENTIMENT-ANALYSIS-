@@ -9,7 +9,6 @@ google-cloud-storage
 seaborn
 emoji
 imbalanced-learn
-re
 
 
 
