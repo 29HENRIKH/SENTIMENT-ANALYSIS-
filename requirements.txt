@@ -1,0 +1,15 @@
+streamlit
+pandas
+scikit-learn
+joblib
+matplotlib
+PyPDF2
+requests
+google-cloud-storage
+seaborn
+emoji
+imbalanced-learn
+re
+
+
+
