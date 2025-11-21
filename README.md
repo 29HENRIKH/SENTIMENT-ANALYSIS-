@@ -14,18 +14,30 @@
 ## MOTIVATION :
 #### - Many companies face losses due to unmonitored customer sentiment. Two examples:
 #### - The Last of Us Part II – faced “review bombing” which led to misinformed pricing and marketing strategies.
-#### - Fashion Nova – lost revenue due to poor monitoring of social media backlash and negative feedback.
+#### - Fashion Nova – lost revenue due to poor monitoring of social media backlash , hiding negative reviews from the public and negative feedback.
 #### - VIBE-LENZZ enables organizations to proactively track sentiment trends and make informed decisions, potentially saving millions in lost revenue and reputation.
 
 ## HOW THE MODEL WORKS :
-#### - Upload CSV or PDF files containing customer comments. 
-#### - Clean and preprocess textual data automatically.
-#### - TF-IDF vectorization to capture important words.
-#### - SVM model for accurate sentiment prediction.
-#### - Display pie chart for overall sentiment distribution.
-#### - Display bar chart of top words per sentiment.
-#### - Provide actionable recommendations for positive and negative feedback.
-#### - User-friendly UI with emojis and interactive charts for better UX.
+### - Upload CSV or PDF files containing customer comments.
+#### - Your app supports multiple input formats, allowing users to bring in raw customer feedback from surveys, exports, or internal reporting tools.
+### - Clean and preprocess textual data automatically.
+#### - The system handles text normalization, removal of noise (URLs, emojis, numbers), tokenization, and stopword removal, ensuring high-quality input for the model.
+### - TF-IDF vectorization to capture important words.
+#### TF-IDF transforms text into numerical features by giving higher weight to impactful words. This helps the model focus on terms that strongly influence sentiment.
+### - SVM model for accurate sentiment prediction.
+#### - A Support Vector Machine classifier is used because it performs exceptionally well on high-dimensional text data. It provides strong generalization and robust decision boundaries.
+### - Display pie chart for overall sentiment distribution.
+#### - The UI visualizes how many comments fall into each sentiment category, helping users quickly understand the polarity of customer feedback.
+### - Display bar chart of top words per sentiment.
+####- The application extracts and displays the most frequent or influential words for each class, giving insight into what customers talk about the most.
+### - Provide actionable recommendations for positive and negative feedback.
+####- Based on predicted sentiment, the system summarizes strengths, pain points, and opportunities for improvement—turning raw comments into strategic insights.
+### - User-friendly UI with emojis and interactive charts for better UX.
+####- The application features a visually engaging design with emojis, collapsible sections, real-time feedback display, and interactive charts powered by Streamlit.
+### - Export results into PDF reports.
+####- Users can download sentiment analysis insights, visualizations, and comment summaries as a clean, formatted PDF for presentations or documentation.
+### - End-to-end pipeline ready for deployment.
+####- The entire workflow—from data ingestion to prediction and visualization—is containerizable and suitable for deployment on cloud platforms (Railway, GCP, AWS, Streamlit Cloud, etc.).
 
 ## DATA REQUIREMENTS
 #### - CSV must contain a column named Text.
