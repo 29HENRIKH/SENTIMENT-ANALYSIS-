@@ -26,8 +26,6 @@
 #### - TF-IDF transforms text into numerical features by giving higher weight to impactful words. This helps the model focus on terms that strongly influence sentiment.
 ### - SVM model for accurate sentiment prediction.
 #### - A Support Vector Machine classifier is used because it performs exceptionally well on high-dimensional text data. It provides strong generalization and robust decision boundaries.
-![Alt text](images/svm cm.png)
-
 ### - Display pie chart for overall sentiment distribution.
 #### - The UI visualizes how many comments fall into each sentiment category, helping users quickly understand the polarity of customer feedback.
 ### - Display bar chart of top words per sentiment.
