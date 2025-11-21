@@ -1,5 +1,5 @@
 ## SENTIMENT-ANALYSIS-
-### VIBE-LENZZ 🌀 analyzes customer feedback, classifies comments as Positive or Negative, highlights top words, and gives actionable insights, helping organizations make data-driven decisions and improve products, services, and engagement
+### VIBE-LENZZ 🌀 analyzes customer feedback, classifies comments as Positive, Negative, Neutral or Irrelevant , highlights top words, and gives actionable insights, helping organizations make data-driven decisions and improve products, services, and engagement
 
 ## PROBLEM STATEMENT :
 #### In todays society we mostly tend to look at the comments , reviews and things of that nature before purchasing a product or getting a service from a company . The company may suffer if there are a lot more negative comments compared to positive comments and thats where VIBE LENZZ comes in . Companies can use the model to know the amount of positive or negative comments , hence directing the company to take action . This in turn helps the company make data driven decisions , make improvements in the product / service the company offers . 
