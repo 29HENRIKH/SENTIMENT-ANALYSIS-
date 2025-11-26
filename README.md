@@ -32,7 +32,7 @@ Real-world examples highlight the financial risks of failing to analyze customer
 
 ### 🎮 Case Study 1: *The Last of Us Part II* (Naughty Dog)
 
-<img src="assets/TLOUP2.png" alt="The Last of Us Part 2 Banner" width="100%">
+<img src="images/TLOUP2.png" alt="The Last of Us Part 2 Banner" width="100%">
 
 | Challenge | Failure | Impact |
 |-----------|---------|--------|
@@ -44,7 +44,7 @@ Real-world examples highlight the financial risks of failing to analyze customer
 
 ### 👗 Case Study 2: Fashion Nova
 
-<img src="assets/fn2.webp" alt="Fashion Nova Banner" width="100%">
+<img src="images/fn2.webp" alt="Fashion Nova Banner" width="100%">
 
 | Challenge | Failure | Impact |
 |-----------|---------|--------|
@@ -68,7 +68,7 @@ Real-world examples highlight the financial risks of failing to analyze customer
 ## 📊 Linguistic Insights: Top Words by Sentiment
 
 <div align="center">
-<img src="assets/topwords.png" alt="Top Words by Sentiment Analysis" width="800">
+<img src="images/topwords.png" alt="Top Words by Sentiment Analysis" width="800">
 <p><em>(Most frequent terms driving Positive vs. Negative sentiment)</em></p>
 </div>
 
@@ -95,9 +95,9 @@ We benchmarked **Naive Bayes**, **Logistic Regression**, and **Linear SVM** usin
 | Linear SVM | Most balanced accuracy; correctly identified 2,877 Neutral cases |
 
 <div align="center">
-<img src="assets/NBAL.png" width="250">
-<img src="assets/SVMAL.png" width="250">
-<img src="assets/LRAL.png" width="250">
+<img src="images/NBAL.png" width="250">
+<img src="images/SVMAL.png" width="250">
+<img src="images/LRAL.png" width="250">
 </div>
 
 **🏆 Why Linear SVM Won:**  
@@ -114,7 +114,7 @@ Despite strong performance, the model occasionally confuses Neutral comments wit
 - Examples: *"game"*, *"time"*, *"just"* appear across all sentiments.
 
 <div align="center">
-<img src="assets/sharedsnts.png" alt="Vocabulary Overlap Graph" width="700">
+<img src="images/sharedsnts.png" alt="Vocabulary Overlap Graph" width="700">
 </div>
 
 **Implication:**  
@@ -129,12 +129,4 @@ Despite strong performance, the model occasionally confuses Neutral comments wit
 - **PDF Files:** Multiple pages supported; text will be automatically extracted.
 
 ---
-
-## 🔧 Installation & Usage
-
-**Clone the repository:**
-
-```bash
-git clone https://github.com/your-username/vibe-lenzz.git
-cd vibe-lenzz
 
