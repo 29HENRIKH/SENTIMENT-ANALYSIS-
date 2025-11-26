@@ -72,7 +72,7 @@ We utilized Confusion Matrices to visualize decision boundaries:
 
 | Naive Bayes | Linear SVM (Selected) | Logistic Regression |
 | :---: | :---: | :---: |
-| ![Naive Bayes Matrix](assets/NBAL.png) | ![SVM Matrix](assets/SVMAL.png) | ![Logistic Regression Matrix](assets/LRAL.png) |
+| ![Naive Bayes Matrix](images/NBAL.png) | ![SVM Matrix](images/SVMAL.png) | ![Logistic Regression Matrix](images/LRAL.png) |
 
 **Why Linear SVM Won:**
 * **Naive Bayes** struggled significantly, misclassifying a vast amount of 'Neutral' and 'Irrelevant' data as 'Negative' (likely due to data imbalance or feature independence assumptions).
@@ -84,7 +84,7 @@ Despite SVM's strong performance, our error analysis reveals that the model occa
 **The "Vocabulary Overlap" Problem:**
 Our TF-IDF vectorizer assigns weight to words based on frequency. The error stems from the fact that "Neutral" comments often share high-frequency nouns and verbs with polarized comments, but lack the defining adjectives.
 
-![Top Confusing Words Analysis](assets/shared_snts.png)
+![Top Confusing Words Analysis](images/shared_snts.png)
 
 * **Evidence:** As seen in the chart above, high-frequency words like **"game"**, **"time"**, and **"just"** appear massively across **all three sentiments**.
 * **The Model's Dilemma:** Because these words lack inherent polarity (they are context-dependent), the model struggles to distinguish a neutral statement (e.g., *"I played the game"*) from a negative one (e.g., *"This game is broken"*) based purely on word frequency.
