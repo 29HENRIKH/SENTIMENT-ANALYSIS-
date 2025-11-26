@@ -1,196 +1,140 @@
 <div align="center">
 
-🌀 VIBE-LENZZ
+# 🌀 VIBE-LENZZ
 
-Customer Sentiment Analysis at Scale
+**Customer Sentiment Analysis at Scale**
 
-<br />
-
-"Turn raw customer feedback into actionable business insights."
+_"Turn raw customer feedback into actionable business insights."_
 
 </div>
 
-📖 Overview
+---
 
-VIBE-LENZZ is a machine learning-powered application designed to analyze customer sentiments from textual feedback. It empowers organizations to classify comments, identify pain points, and make data-driven decisions to improve products and services.
+## 📖 Overview
 
-📉 Problem Statement
+**VIBE-LENZZ** is a machine learning-powered application designed to analyze customer sentiments from textual feedback. It empowers organizations to classify comments, identify pain points, and make data-driven decisions to improve products and services.
 
-In the digital economy, a company’s financial health—spanning profits, sales, and market share—is inextricably linked to its online reputation. Public perception acts as a primary filter for potential customers.
+---
 
-The reliance on this feedback loop creates a critical vulnerability: if negative sentiment outweighs the positive, companies face significant revenue loss, rapid customer churn, and long-term damage to brand reputation.
+## 📉 Problem Statement
 
-VIBE-LENZZ addresses this by analyzing feedback at scale, moving beyond simple observation to data-driven action.
+In the digital economy, a company’s financial health—spanning profits, sales, and market share—is tightly linked to its online reputation. Public perception acts as a primary filter for potential customers.
 
-🚀 Motivation: The Cost of Ignoring Sentiment
+Reliance on this feedback loop creates a critical vulnerability: if negative sentiment outweighs positive, companies risk significant revenue loss, rapid customer churn, and long-term brand damage.
 
-Real-world examples illustrate the severe financial risks of failing to analyze customer feedback effectively.
+**VIBE-LENZZ addresses this by analyzing feedback at scale, moving beyond observation to actionable insights.**
 
-🎮 Case Study 1: The Last of Us Part II (Naughty Dog)
+---
 
-<img src="images/TLOUP2.png" alt="The Last of Us Part 2 Banner" width="100%">
+## 🚀 Motivation: The Cost of Ignoring Sentiment
 
-Challenge
+Real-world examples highlight the financial risks of failing to analyze customer feedback effectively.
 
-Failure
+### 🎮 Case Study 1: *The Last of Us Part II* (Naughty Dog)
 
-Impact
+<img src="assets/TLOUP2.png" alt="The Last of Us Part 2 Banner" width="100%">
 
-"Review Bombing" driven by ideological polarization.
+| Challenge | Failure | Impact |
+|-----------|---------|--------|
+| Review Bombing driven by ideological polarization | No nuanced tracking; failed to separate valid criticism from trolling | Long-term sales potential damaged due to uncontrolled negative narrative |
 
-Lacking nuanced tracking, they failed to segment valid criticism from trolling.
+**✨ VIBE-LENZZ Solution:** Real-time dashboards would have immediately identified specific grievance themes for a strategic PR response.
 
-Long-term sales potential was damaged due to an uncontrolled negative narrative.
+---
 
-✨ The VIBE-LENZZ Solution: Real-time dashboards would have identified specific grievance themes immediately for a strategic PR response.
+### 👗 Case Study 2: Fashion Nova
 
-👗 Case Study 2: Fashion Nova
+<img src="assets/fn2.webp" alt="Fashion Nova Banner" width="100%">
 
-<img src="images/fn2.png" alt="Fashion Nova Banner" width="100%">
+| Challenge | Failure | Impact |
+|-----------|---------|--------|
+| $4.2 million FTC fine for suppressing negative reviews | Hid comments under 4 stars, ignoring sizing/quality issues | Loss of consumer trust and massive financial penalties |
 
-Challenge
+**✨ VIBE-LENZZ Solution:** Automated analysis would have highlighted product flaws for immediate improvement rather than hiding them.
 
-Failure
+---
 
-Impact
+## ⚙️ How It Works
 
-$4.2 million FTC fine for suppressing negative reviews.
+1. **📥 Input:** Upload CSV (with a `Text` column) or PDF files containing raw comments.  
+2. **🧹 Preprocessing:** Automatic cleaning of noise (URLs, emojis, stopwords) and text normalization.  
+3. **🧮 Vectorization:** TF-IDF transforms text to weigh impactful words and capture sentiment drivers.  
+4. **🤖 Prediction:** An SVM model classifies sentiment (Positive/Negative/Neutral).  
+5. **📊 Visualization:** Generates charts and a downloadable PDF report.  
+6. **🗣️ Linguistic Insights:** Extracts key drivers behind customer opinions by analyzing word frequency patterns.  
 
-Hid comments under 4 stars, blinding them to sizing/quality issues.
+---
 
-Loss of consumer trust and massive financial penalties.
-
-✨ The VIBE-LENZZ Solution: Automated analysis would have highlighted product flaws (e.g., sizing issues) for immediate improvement rather than hiding them.
-
-⚙️ How It Works
-
-graph TD
-    A[📂 User Upload] -->|CSV or PDF| B(🧹 Data Preprocessing)
-    B --> C{⚙️ Feature Engineering}
-    
-    subgraph Pipeline
-    B -->|Clean & Tokenize| B1[Remove Noise/Stopwords]
-    B1 -->|Normalize| B2[Lemmatization]
-    B2 --> C
-    end
-
-    C -->|TF-IDF Vectorization| D[🤖 Model Prediction]
-    
-    subgraph Model
-    D -->|Input Features| E[Linear SVM Classifier]
-    E -->|Classify| F[Sentiment Output]
-    end
-
-    F --> G[📊 Streamlit Dashboard]
-    
-    subgraph Insights
-    G --> H[📈 Visualizations]
-    G --> I[📑 PDF Report]
-    end
-    
-    H -->|Pie & Bar Charts| J[User Insights]
-    I -->|Downloadable| J
-
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style E fill:#bbf,stroke:#333,stroke-width:2px
-    style G fill:#dfd,stroke:#333,stroke-width:2px
-
-
-📥 Input: Upload CSV (with a Text column) or PDF files containing raw comments.
-
-🧹 Preprocessing: Auto-cleaning of noise (URLs, emojis, stopwords) and normalization.
-
-🧮 Vectorization: TF-IDF transforms text, weighing impactful words to capture sentiment drivers.
-
-🤖 Prediction: An SVM model classifies sentiment (Positive/Negative/Neutral).
-
-📊 Visualization: The app generates charts and a downloadable PDF report.
-
-🗣️ Linguistic Insights: Top Words by Sentiment
-
-Beyond simple classification, VIBE-LENZZ extracts the key drivers behind customer opinions. By analyzing word frequency, we identified distinct vocabulary patterns that characterize each sentiment.
+## 📊 Linguistic Insights: Top Words by Sentiment
 
 <div align="center">
-<img src="images/topwords.png" alt="Top Words by Sentiment Analysis" width="800">
-<p><em>(Fig: Most frequent terms driving Positive vs. Negative sentiment)</em></p>
+<img src="assets/topwords.png" alt="Top Words by Sentiment Analysis" width="800">
+<p><em>(Most frequent terms driving Positive vs. Negative sentiment)</em></p>
 </div>
 
-🔑 Key Findings
+**Key Findings:**
 
-🟢 Positive Drivers: Words like "Love", "Best", and "Great" dominate. These often correlate with user satisfaction and brand loyalty.
+- 🟢 **Positive Drivers:** Words like *"Love"*, *"Best"*, *"Great"* correlate with user satisfaction and brand loyalty.  
+- 🔴 **Negative Drivers:** Words like *"Crash"*, *"Slow"*, *"Refund"* highlight technical or service issues leading to churn.  
+- 🔵 **Neutral Signals:** Words like *"Update"*, *"Release"* indicate informational queries rather than emotional feedback.  
 
-🔴 Negative Drivers: Complaints often center around specific failures, featuring words like "Crash", "Slow", or "Refund". This highlights that technical/service stability is the primary cause of churn.
+**💡 Business Value:** Companies can identify the exact root causes of user dissatisfaction and take targeted action.
 
-🔵 Neutral Signals: Functional terms like "Update" or "Release" appear frequently, often indicating informational queries rather than emotional feedback.
+---
 
-💡 Business Value: This granular analysis allows companies to stop guessing why users are unhappy and fix the specific root causes.
+## 📊 Model Performance & Error Analysis
 
-📊 Model Performance & Error Analysis
+### 1. Model Comparison
 
-To ensure reliability, we benchmarked three algorithms: Naive Bayes, Logistic Regression, and Linear SVM.
+We benchmarked **Naive Bayes**, **Logistic Regression**, and **Linear SVM** using **confusion matrices**.
 
-1. Model Comparison
-
-We utilized Confusion Matrices to visualize decision boundaries:
-
-Naive Bayes
-
-Linear SVM (Selected)
-
-Logistic Regression
-
-<img src="images/NBAL.png" width="250">
-
-<img src="images/SVMAL.png" width="250">
-
-<img src="images/LRAL.png" width="250">
-
-🏆 Why Linear SVM Won:
-
-Naive Bayes struggled, misclassifying 'Neutral' data as 'Negative'.
-
-Linear SVM provided the most balanced accuracy, correctly identifying 2,877 Neutral cases (the hardest class).
-
-2. Deep Dive: The "Neutrality" Challenge
-
-Despite SVM's strong performance, the model occasionally confuses Neutral comments with Positive or Negative ones.
-
-The "Vocabulary Overlap" Problem:
-Our error analysis reveals that "Neutral" comments often share high-frequency nouns and verbs with polarized comments but lack defining adjectives.
+| Model | Performance |
+|-------|------------|
+| Naive Bayes | Misclassified 'Neutral' as 'Negative' |
+| Logistic Regression | Moderate performance |
+| Linear SVM | Most balanced accuracy; correctly identified 2,877 Neutral cases |
 
 <div align="center">
-<img src="images/sharedsnts.png" alt="Vocabulary Overlap Graph" width="700">
+<img src="assets/NBAL.png" width="250">
+<img src="assets/SVMAL.png" width="250">
+<img src="assets/LRAL.png" width="250">
 </div>
 
-Evidence: As seen above, words like "game", "time", and "just" appear massively across all three sentiments.
+**🏆 Why Linear SVM Won:**  
+- Neutral comments are the hardest class; SVM provided the most accurate classification.
 
-The Dilemma: Because these words lack inherent polarity, the model struggles to distinguish a neutral statement ("I played the game") from a negative one ("This game is broken") based purely on frequency.
+---
 
-Conclusion: Future iterations will implement Contextual Embeddings (BERT) to solve this ambiguity.
+### 2. Deep Dive: The "Neutrality" Challenge
 
-📂 Data Requirements
+Despite strong performance, the model occasionally confuses Neutral comments with Positive or Negative ones.
 
-To ensure the model performs correctly, please ensure your data meets the following criteria:
+**Vocabulary Overlap Problem:**  
+- Neutral comments often share high-frequency nouns and verbs with polarized comments but lack defining adjectives.  
+- Examples: *"game"*, *"time"*, *"just"* appear across all sentiments.
 
-CSV Files: Must contain a column explicitly named Text.
+<div align="center">
+<img src="assets/sharedsnts.png" alt="Vocabulary Overlap Graph" width="700">
+</div>
 
-PDF Files: Can contain multiple pages; the system will automatically extract all text.
+**Implication:**  
+- Words like *"I played the game"* (Neutral) vs *"This game is broken"* (Negative) look similar to the model based purely on frequency.  
+- **Future solution:** Implement **contextual embeddings (BERT)** to capture subtle differences.
 
-🔧 Installation & Usage
+---
 
-To run this project locally:
+## 📂 Data Requirements
 
-Clone the repository:
+- **CSV Files:** Must contain a column named `Text`.  
+- **PDF Files:** Multiple pages supported; text will be automatically extracted.
 
-git clone [https://github.com/your-username/vibe-lenzz.git](https://github.com/your-username/vibe-lenzz.git)
+---
+
+## 🔧 Installation & Usage
+
+**Clone the repository:**
+
+```bash
+git clone https://github.com/your-username/vibe-lenzz.git
 cd vibe-lenzz
 
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-
-Run the application:
-
-streamlit run app.py
