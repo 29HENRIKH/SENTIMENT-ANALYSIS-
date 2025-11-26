@@ -108,5 +108,5 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ---
 
-**Author:** [Your Name]
-**Contact:** [Your Email/LinkedIn]
+**Author:** [Henrick Reagan Sarai]
+**Contact:** [LinkedIn ; Reagan Sarai]
