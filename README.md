@@ -1,9 +1,4 @@
-# 🌀 VIBE-LENZZ: Customer Sentiment Analysis at Scale
-
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-SVM-green)
-![Status](https://img.shields.io/badge/Status-Maintained-brightgreen)
+#  VIBE-LENZZ: Customer Sentiment Analysis at Scale
 
 > **Turn raw customer feedback into actionable business insights.**
 
@@ -11,7 +6,7 @@
 
 ---
 
-## 📉 Problem Statement
+##  Problem Statement
 
 In the digital economy, a company’s financial health—spanning profits, sales, and market share—is inextricably linked to its online reputation. Public perception, driven by user reviews and comments, acts as a primary filter for potential customers before they commit to a purchase.
 
@@ -21,37 +16,37 @@ Therefore, manual monitoring is no longer sufficient. **Sentiment analysis is im
 
 ---
 
-## 🚀 Motivation: The Cost of Ignoring Sentiment
+## Motivation: The Cost of Ignoring Sentiment
 
 Real-world examples illustrate the severe financial and reputational risks of failing to analyze customer feedback effectively.
 
 #### Case Study 1: The Last of Us Part II (Naughty Dog)(im)
-* **📉 The Challenge:** The game faced immediate, massive **"review bombing"** driven largely by ideological polarization rather than gameplay mechanics.
-* **🚫 The Failure:** Lacking nuanced sentiment tracking, the company failed to segment valid criticism from organized trolling. They missed early warning signs, leading to a defensive rather than strategic PR response.
-* **💸 The Impact:** While initial sales were high, the uncontrolled negative narrative damaged **long-term sales potential** and eroded brand trust for future releases.
-* **✨ The VIBE-LENZZ Solution:** Real-time sentiment dashboards would have allowed the team to identify specific grievance themes immediately, enabling a data-backed crisis management strategy.
+* ** The Challenge:** The game faced immediate, massive **"review bombing"** driven largely by ideological polarization rather than gameplay mechanics.
+* ** The Failure:** Lacking nuanced sentiment tracking, the company failed to segment valid criticism from organized trolling. They missed early warning signs, leading to a defensive rather than strategic PR response.
+* ** The Impact:** While initial sales were high, the uncontrolled negative narrative damaged **long-term sales potential** and eroded brand trust for future releases.
+* ** The VIBE-LENZZ Solution:** Real-time sentiment dashboards would have allowed the team to identify specific grievance themes immediately, enabling a data-backed crisis management strategy.
 
 #### Case Study 2: Fashion Nova
-* **📉 The Challenge:** The brand faced a regulatory crisis, resulting in a **$4.2 million FTC fine** for suppressing negative reviews to artificially inflate ratings.
-* **🚫 The Failure:** Instead of analyzing feedback to fix issues, they hid comments under 4 stars. This blinded them to recurring pain points like **sizing inconsistencies** and **quality complaints**.
-* **💸 The Impact:** The lack of transparency distorted public perception and resulted in a massive financial penalty and a loss of consumer trust.
-* **✨ The VIBE-LENZZ Solution:** Automated analysis would have highlighted product flaws (e.g., sizing issues) for immediate improvement, turning negative feedback into a roadmap for better product design rather than a legal liability.
+* ** The Challenge:** The brand faced a regulatory crisis, resulting in a **$4.2 million FTC fine** for suppressing negative reviews to artificially inflate ratings.
+* ** The Failure:** Instead of analyzing feedback to fix issues, they hid comments under 4 stars. This blinded them to recurring pain points like **sizing inconsistencies** and **quality complaints**.
+* ** The Impact:** The lack of transparency distorted public perception and resulted in a massive financial penalty and a loss of consumer trust.
+* ** The VIBE-LENZZ Solution:** Automated analysis would have highlighted product flaws (e.g., sizing issues) for immediate improvement, turning negative feedback into a roadmap for better product design rather than a legal liability.
 
 ---
 
-## 🛠️ Overview & Features
+##  Overview & Features
 
 **VIBE-LENZZ** is a Python-based Streamlit web application. It leverages **Support Vector Machines (SVM)** to process text from CSV or PDF uploads.
 
 ### Key Capabilities
-* **📊 Sentiment Classification:** Categorizes feedback as Positive, Negative, Neutral, or Irrelevant.
-* **🔍 Actionable Insights:** Highlights top influential words and provides strategic recommendations.
-* **📈 Interactive Visualizations:** Features dynamic pie charts and bar charts for real-time data exploration.
-* **📄 PDF Reporting:** Exports analysis results into clean, formatted PDF reports for stakeholders.
+* ** Sentiment Classification:** Categorizes feedback as Positive, Negative, Neutral, or Irrelevant.
+* ** Actionable Insights:** Highlights top influential words and provides strategic recommendations.
+* ** Interactive Visualizations:** Features dynamic pie charts and bar charts for real-time data exploration.
+* ** PDF Reporting:** Exports analysis results into clean, formatted PDF reports for stakeholders.
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 ![VIBE-LENZZ System Workflow]
 
@@ -63,7 +58,7 @@ Real-world examples illustrate the severe financial and reputational risks of fa
 
 ---
 
-## 📊 Model Performance & Error Analysis
+##  Model Performance & Error Analysis
 
 To ensure VIBE-LENZZ is reliable, we benchmarked three algorithms: **Naive Bayes**, **Logistic Regression**, and **Linear SVM**.
 
