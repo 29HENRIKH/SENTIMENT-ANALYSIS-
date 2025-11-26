@@ -25,7 +25,7 @@ Therefore, manual monitoring is no longer sufficient. **Sentiment analysis is im
 
 Real-world examples illustrate the severe financial and reputational risks of failing to analyze customer feedback effectively.
 
-#### Case Study 1: The Last of Us Part II (Naughty Dog)
+#### Case Study 1: The Last of Us Part II (Naughty Dog)(im)
 * **📉 The Challenge:** The game faced immediate, massive **"review bombing"** driven largely by ideological polarization rather than gameplay mechanics.
 * **🚫 The Failure:** Lacking nuanced sentiment tracking, the company failed to segment valid criticism from organized trolling. They missed early warning signs, leading to a defensive rather than strategic PR response.
 * **💸 The Impact:** While initial sales were high, the uncontrolled negative narrative damaged **long-term sales potential** and eroded brand trust for future releases.
@@ -53,7 +53,7 @@ Real-world examples illustrate the severe financial and reputational risks of fa
 
 ## ⚙️ How It Works
 
-![VIBE-LENZZ System Workflow](assets/workflow_diagram.png)
+![VIBE-LENZZ System Workflow]
 
 1.  **Input:** Users upload **CSV** (with a `Text` column) or **PDF** files containing raw customer comments.
 2.  **Preprocessing:** The system automatically cleans data by normalizing text and removing noise (URLs, emojis, numbers, stopwords).
