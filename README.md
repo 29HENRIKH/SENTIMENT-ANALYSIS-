@@ -35,13 +35,13 @@ The reliance on this feedback loop creates a critical vulnerability: if negative
 
 Real-world examples illustrate the severe financial risks of failing to analyze customer feedback effectively.
 
-### 🎮 Case Study 1: The Last of Us Part II (Naughty Dog)
+### 🎮 Case Study 1: The Last of Us Part II (Naughty Dog)(images/TLOUP2.png)
 | Challenge | Failure | Impact |
 | :--- | :--- | :--- |
 | **"Review Bombing"** driven by ideological polarization. | Lacking nuanced tracking, they failed to segment valid criticism from trolling. | **Long-term sales potential** was damaged due to an uncontrolled negative narrative. |
 > **✨ The VIBE-LENZZ Solution:** Real-time dashboards would have identified specific grievance themes immediately for a strategic PR response.
 
-### 👗 Case Study 2: Fashion Nova
+### 👗 Case Study 2: Fashion Nova(images/fn2.png)
 | Challenge | Failure | Impact |
 | :--- | :--- | :--- |
 | **$4.2 million FTC fine** for suppressing negative reviews. | Hid comments under 4 stars, blinding them to sizing/quality issues. | **Loss of consumer trust** and massive financial penalties. |
@@ -51,15 +51,56 @@ Real-world examples illustrate the severe financial risks of failing to analyze 
 
 ## ⚙️ How It Works
 
+```mermaid
+graph TD
+    A[📂 User Upload] -->|CSV or PDF| B(🧹 Data Preprocessing)
+    B --> C{⚙️ Feature Engineering}
+    
+    subgraph Pipeline
+    B -->|Clean & Tokenize| B1[Remove Noise/Stopwords]
+    B1 -->|Normalize| B2[Lemmatization]
+    B2 --> C
+    end
+
+    C -->|TF-IDF Vectorization| D[🤖 Model Prediction]
+    
+    subgraph Model
+    D -->|Input Features| E[Linear SVM Classifier]
+    E -->|Classify| F[Sentiment Output]
+    end
+
+    F --> G[📊 Streamlit Dashboard]
+    
+    subgraph Insights
+    G --> H[📈 Visualizations]
+    G --> I[📑 PDF Report]
+    end
+    
+    H -->|Pie & Bar Charts| J[User Insights]
+    I -->|Downloadable| J
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style E fill:#bbf,stroke:#333,stroke-width:2px
+    style G fill:#dfd,stroke:#333,stroke-width:2px
+
+---
+
+
+## 🗣️ Linguistic Insights: Top Words by Sentiment
+
+Beyond simple classification, VIBE-LENZZ extracts the **key drivers** behind customer opinions. By analyzing word frequency, we identified distinct vocabulary patterns that characterize each sentiment.
+
 <div align="center">
-  <img src="assets/workflow_diagram.png" alt="VIBE-LENZZ Workflow" width="800">
+  <img src="images/topwords.png" alt="Top Words by Sentiment Analysis" width="800">
+  <p><em>(Fig: Most frequent terms driving Positive vs. Negative sentiment)</em></p>
 </div>
 
-1.  **📥 Input:** Upload **CSV** (with a `Text` column) or **PDF** files containing raw comments.
-2.  **🧹 Preprocessing:** Auto-cleaning of noise (URLs, emojis, stopwords) and normalization.
-3.  **🧮 Vectorization:** **TF-IDF** transforms text, weighing impactful words to capture sentiment drivers.
-4.  **🤖 Prediction:** An **SVM model** classifies sentiment (Positive/Negative/Neutral).
-5.  **📊 Visualization:** The app generates charts and a downloadable PDF report.
+### 🔑 Key Findings
+* **🟢 Positive Drivers:** Words like **"Love"**, **"Best"**, and **"Great"** dominate. These often correlate with user satisfaction and brand loyalty.
+* **🔴 Negative Drivers:** Complaints often center around specific failures, featuring words like **"Crash"**, **"Slow"**, or **"Refund"**. This highlights that technical/service stability is the primary cause of churn.
+* **🔵 Neutral Signals:** Functional terms like **"Update"** or **"Release"** appear frequently, often indicating informational queries rather than emotional feedback.
+
+> **💡 Business Value:** This granular analysis allows companies to stop guessing *why* users are unhappy and fix the specific root causes.
 
 ---
 
@@ -72,7 +113,7 @@ We utilized Confusion Matrices to visualize decision boundaries:
 
 | Naive Bayes | Linear SVM (Selected) | Logistic Regression |
 | :---: | :---: | :---: |
-| <img src="assets/NBAL.png" width="250"> | <img src="assets/SVMAL.png" width="250"> | <img src="assets/LRAL.png" width="250"> |
+| <img src="images/NBAL.png" width="250"> | <img src="images/SVMAL.png" width="250"> | <img src="images/LRAL.png" width="250"> |
 
 **🏆 Why Linear SVM Won:**
 * **Naive Bayes** struggled, misclassifying 'Neutral' data as 'Negative'.
@@ -85,7 +126,7 @@ Despite SVM's strong performance, the model occasionally confuses **Neutral** co
 Our error analysis reveals that "Neutral" comments often share high-frequency nouns and verbs with polarized comments but lack defining adjectives.
 
 <div align="center">
-  <img src="assets/sharedsnts.png" alt="Vocabulary Overlap Graph" width="700">
+  <img src="images/sharedsnts.png" alt="Vocabulary Overlap Graph" width="700">
 </div>
 
 * **Evidence:** As seen above, words like **"game"**, **"time"**, and **"just"** appear massively across **all three sentiments**.
