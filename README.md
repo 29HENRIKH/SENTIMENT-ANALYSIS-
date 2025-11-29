@@ -216,7 +216,6 @@ If TF-IDF score of “refund” is high → more likely to predict Negative.
 
 #### 📌 Project Observation  
 Moderate accuracy  
-Better than NB but worse than SVM.
 
 ---
 
